@@ -1,0 +1,6 @@
+//Make sure that the phone numbers are valid (nnn-nnn-nnnn) starting with 801
+
+let nums = ["801-777-66553", "801-777-665-", "801-77A-6655", "801-778-665"];
+
+let regEx = /801-\d\d\d-\d\d\d\d/,
+let newArray = nums.filter(elem => regEx.test(elem));
